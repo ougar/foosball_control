@@ -1,0 +1,50 @@
+<programmenu title='bordfodbold'>
+	<menu title='Denne kamp'>
+    <item>Nulstil stilling</item>
+    <item>Maal raekkefoelge</item>
+    <item>Statistik</item>
+	</menu>
+
+	<menu title='Sidste kamp'>
+    <item>Vis kampstatistik</item>
+    <item>Maal raekkefoelge</item>
+    <item>Statistik</item>
+	</menu>
+
+	<menu title='Kamplaengde'>
+	  <item type='scale' min='5' max='21' param='match.setlenght'>Maal pr. saet</item>
+	  <item type='scale' min='1' max='7' param='match.sets'>Antal saet</item>
+	  <item type='yesno' param='match.winby2'>Vinde med 2</item>
+	</menu>
+
+	<menu title='Kamphistorik'>
+	  <item>Ikke implementeret</item>
+	</menu>
+
+	<menu title='Statistik'>
+	  <item>Ikke implementeret</item>
+	</menu>
+
+	<menu title='Indstillinger'>
+
+		<menu title='Lyd' function='menu_sound' type='onoff'>
+			<item type='on' param='sound.state'> Taend for lyden </item>
+			<item type='off' param='sound.state'> Sluk for lyden </item> 
+			<item type='scale' min='0' max='10' param='sound.volume'> Volume </item>
+		</menu>
+
+		<menu title='Administration' function='menu_admin' restricted='yes'>
+			<menu title='Netvaerk'>
+				<item arg='network_show'>    Vis opsaetning    </item>
+				<item arg='network_test'>    Test forbindelse  </item>
+				<item arg='network_restart'> Genstart netvaerk </item>
+			</menu>
+			<menu title='Pi status'>
+				<item arg='restart'  confirm='yes'>Restart program </item>
+				<item arg='reboot'   confirm='yes'>Reboot Pi       </item>
+				<item arg='shutdown' confirm='yes'>Shutdown Pi     </item>
+			</menu>
+		</menu>
+
+	</menu>
+</programmenu>
